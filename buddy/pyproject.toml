@@ -1,0 +1,15 @@
+[project]
+name = "buddy"
+version = "0.1.0"
+description = "Asistente virtual con mascota: recordatorios, calendario, búsqueda de archivos y ciclo de sueño."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "dateparser>=1.2.0",   # entender fechas en español ("mañana a las 3 pm")
+    "rapidfuzz>=3.9.0",    # búsqueda aproximada de archivos y programas
+    "platformdirs>=4.2.0", # carpeta de datos del usuario según el sistema operativo
+    "ollama>=0.4.0",       # cliente de Ollama: conversación con un modelo local, sin internet
+]
+
+[tool.uv]
+package = false
